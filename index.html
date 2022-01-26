@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            width: 320px;
+            padding: 10px;
+            border: 25px solid rgb(70, 94, 231);
+            margin: 0;
+        }
+        
+        #a {
+            float: right;
+            margin: 0;
+        }
+        
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+        
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+        
+        .flip-box-back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Lists</h1>
+    <br>
+    <hr>
+    <h3>HTML lists allow web developers to group a set of related items in lists.</h3>
+    <br>
+    <h3>Type of list.</h3>
+    <br>
+    <section class="flip-box">
+        <section class="flip-box-inner">
+            <section class="flip-box-front">
+                <ul>
+                    <h3>An unordered HTML list:</h3>
+                    <li>apple</li>
+                    <li>mango</li>
+                    <li>tree</li>
+                    <h4>come here</h4>
+                </ul>
+            </section>
+            <section class="flip-box-back">
+                <ol>
+                    <h3>An ordered HTML list:</h3>
+                    <li>apple</li>
+                    <li>mango</li>
+                    <li>tree</li>
+                </ol>
+            </section>
+        </section>
+    </section>
+
+
+
+
+
+
+    <h2>Unordered HTML List</h2>
+    An unordered list starts with the <code class="w3-codespan">&lt;ul&gt;</code> tag. Each list item starts with the <code class="w3-codespan">&lt;li&gt;</code> tag. <br> <br> The list items will be marked with bullets (small black circles) by default:
+    <br>
+    <br>
+    <div class="w3-code notranslate htmlHigh">
+        <h3>Example</h3>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br> &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <h3>output</h3>
+    <div>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <h3>Ordered HTML List</h3>
+    <h4> An ordered list starts with the <code class="w3-codespan">&lt;ol&gt;</code> tag. Each list item starts with the <code class="w3-codespan">&lt;li&gt;</code> tag.</h4>
+    <h4>The list items will be marked with numbers by default:</h4>
+
+
+    <div class="w3-code notranslate htmlHigh">
+        <h3>Example</h3>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br> &nbsp;
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <h3>solution</h3>
+    <div>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </div>
+
+    <br>
+
+    <div class="w3-code notranslate htmlHigh">
+        <h3>Uppercase Letters:</h3>
+        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="A"</span></span>
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br> &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li
+        <span class="tagcolor" style="color:mediumblue">&gt;</span>
+        </span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <h3>solution</h3>
+    <div>
+        <ol type="A">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </div>
+</body>
+
+</html>
